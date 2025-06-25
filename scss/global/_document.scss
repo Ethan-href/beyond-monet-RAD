@@ -1,0 +1,29 @@
+::-moz-selection {
+  text-shadow: none;
+  background: black;
+  color: white;
+}
+
+::selection {
+  text-shadow: none;
+  background: black;
+  color: white;
+}
+
+html,
+body {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "circular-std", sans-serif;
+  background-image: url("../assets/rad-bg.png");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: repeat-x;
+  min-height: 100vh;
+  color: #fff;
+}

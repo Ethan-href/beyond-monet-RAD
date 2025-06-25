@@ -1,0 +1,49 @@
+.accordions {
+  .single-accordion {
+    .accordion-heading {
+      svg {
+        transition: all 0.5s ease;
+      }
+    }
+
+    &.active {
+      .accordion-heading {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  h2,
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 100%;
+  cursor: pointer;
+  h3 {
+    margin: 0;
+    flex: 1 1 auto;
+  }
+  .arrow {
+    display: block;
+    background-color: #323232;
+    width: 20px;
+    height: 10px;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    transition: ease-in-out 0.4s;
+    margin-left: 24px;
+    flex-shrink: 0;
+  }
+}
+
+.single-accordion.active .arrow {
+  rotate: 180deg;
+}

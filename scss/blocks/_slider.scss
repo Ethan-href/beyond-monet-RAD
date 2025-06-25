@@ -1,0 +1,15 @@
+/* Make bullets larger and change color */
+.swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
+  background: none;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Style the active bullet */
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+  opacity: 1;
+  border: 2px solid #fff;
+}
