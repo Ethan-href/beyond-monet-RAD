@@ -50,6 +50,10 @@ p {
   @include fluid-type(24px, 30px, 500px, 1728px);
 }
 
+.footer p {
+  font-size: 20px;
+}
+
 .accordion p,
 .bullets p {
   @include fluid-type(22px, 25px, 500px, 1728px);
