@@ -1,232 +1,276 @@
-h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
-    line-height: 1.2;
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  line-height: 1.2;
 }
 
-h1, .h1, .gform_title{
-    @include fluid-type(32px, 64px, 1000px, 1728px);
+h1,
+.h1,
+.gform_title {
+  @include fluid-type(32px, 64px, 1000px, 1728px);
 }
 
-h2, .h2{
-    @include fluid-type(25px, 50px, 500px, 1728px);
+h2,
+.h2 {
+  @include fluid-type(25px, 50px, 500px, 1728px);
 }
 
-h3, .h3{
-    @include fluid-type(22px, 40px, 500px, 1728px);
+h3,
+.h3 {
+  @include fluid-type(28px, 35px, 500px, 1728px);
 
-    &.lg {
-        @include fluid-type(22px, 43px, 500px, 1728px);
-    }
+  &.lg {
+    @include fluid-type(22px, 43px, 500px, 1728px);
+  }
 }
 
-h4, .h4{
-    @include fluid-type(20px, 38px, 1100px, 1728px);
+h4,
+.h4 {
+  @include fluid-type(24px, 30px, 1100px, 1728px);
 }
 
-h5, .h5{
-    @include fluid-type(20px, 34px, 500px, 1728px);
+h5,
+.h5 {
+  @include fluid-type(20px, 34px, 500px, 1728px);
 }
 
-h6, .h6{
-    @include fluid-type(18px, 30px, 500px, 1728px);
+h6,
+.h6 {
+  @include fluid-type(18px, 30px, 500px, 1728px);
+}
+
+p {
+  @include fluid-type(24px, 30px, 500px, 1728px);
+}
+
+.accordion p,
+.bullets p {
+  @include fluid-type(22px, 25px, 500px, 1728px);
 }
 
 .list-grid {
-    .btn {
-        padding: 0 !important;
-        background-color: transparent !important;
-        font-weight: 600;
-        @include fluid-type(18px, 30px, 500px, 1728px);
-    }
+  .btn {
+    padding: 0 !important;
+    background-color: transparent !important;
+    font-weight: 600;
+    @include fluid-type(18px, 30px, 500px, 1728px);
+  }
 }
 
-.subtext{
-    p, p a:not(.btn), li, td{
-        @include fluid-type(18px, 30px, 900px, 1728px);
-        line-height: 1.2;
+.subtext {
+  p,
+  p a:not(.btn),
+  li,
+  td {
+    @include fluid-type(18px, 30px, 900px, 1728px);
+    line-height: 1.2;
 
-        strong, b {
-            font-weight: 600;
-        }
+    strong,
+    b {
+      font-weight: 600;
+    }
+  }
+
+  &.sm {
+    p,
+    p a:not(.btn),
+    li,
+    td {
+      @include fluid-type(16px, 30px, 900px, 1728px);
+    }
+  }
+
+  &.md {
+    p,
+    p a:not(.btn),
+    li,
+    td {
+      @include fluid-type(16px, 36px, 900px, 1728px);
     }
 
-    &.sm{
-        p, p a:not(.btn), li, td{
-            @include fluid-type(16px, 30px, 900px, 1728px);
-        }
+    h5,
+    .h5 {
+      @include fluid-type(20px, 38px, 500px, 1728px);
+      font-weight: 700;
     }
+  }
 
-    &.md{
-        p, p a:not(.btn), li, td{
-            @include fluid-type(16px, 36px, 900px, 1728px);
-        }
-
-        h5, .h5{
-            @include fluid-type(20px, 38px, 500px, 1728px);
-            font-weight: 700;
-        }
+  &.lg {
+    p,
+    p a:not(.btn),
+    li,
+    td {
+      @include fluid-type(16px, 37px, 900px, 1728px);
     }
+  }
 
-    &.lg{
-        p, p a:not(.btn), li, td{
-            @include fluid-type(16px, 37px, 900px, 1728px);
-
-        }
+  &.low-lh {
+    p,
+    p a:not(.btn),
+    li,
+    td {
+      line-height: 1.15;
     }
+  }
 
-    &.low-lh {
-        p, p a:not(.btn), li, td{
-            line-height: 1.15;
-        }
+  a:not(.btn) {
+    font-size: inherit;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: 400;
+    background-image: linear-gradient(currentColor, currentColor),
+      linear-gradient(#e9355c, #e9355c);
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.8s ease;
+
+    &:hover {
+      background-size: 0 2px, 100% 2px;
     }
+  }
 
-    a:not(.btn) {
-        font-size: inherit;
-        text-decoration: none;
-        width: fit-content;
-        font-weight: 400;
-        background-image: linear-gradient(currentColor, currentColor),
-            linear-gradient(#E9355C, #E9355C);
-        background-size: 100% 2px, 0 2px;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size .8s ease;
-        
-        &:hover{
-            background-size: 0 2px, 100% 2px;
-        }
+  > h1,
+  > h2,
+  > h3 {
+    @apply mb-24 xl:mb-40;
+
+    &:not(:first-child) {
     }
+  }
 
-    > h1, > h2, > h3{
-        @apply mb-24 xl:mb-40;
+  > h4,
+  > h5,
+  > h6 {
+    margin-bottom: 12px;
 
-        &:not(:first-child){
-
-        }
+    &:not(:first-child) {
     }
+  }
 
-    > h4, > h5, > h6{
-        margin-bottom: 12px;
-
-        &:not(:first-child){
-
-        }
+  p {
+    &:not(:last-child) {
+      margin-bottom: 2em !important;
     }
+  }
 
-    p{
-        &:not(:last-child){
-            margin-bottom: 2em !important
-        }
+  //default list
+  ul {
+    list-style: disc;
+    margin-bottom: 24px;
+    padding-left: 30px;
+
+    li {
+      position: relative;
+      margin-bottom: 3px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::marker {
+        color: currentColor;
+      }
     }
+  }
 
-    //default list
-    ul{
-        list-style: disc;
-        margin-bottom: 24px;
-        padding-left: 30px;
+  //numbered list
+  ol {
+    list-style: decimal;
+    padding-left: 35px;
+    margin-bottom: 24px !important;
 
-        li{
-            position: relative;
-            margin-bottom: 3px;
+    li {
+      padding-left: 0px;
+      position: relative;
+      margin-bottom: 3px;
+      margin-bottom: 10px !important;
 
-            &:last-child{
-                margin-bottom: 0;
-            }
-
-			&::marker{
-				color: currentColor;
-			}
-        }
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-    
+  }
 
-	//numbered list
-    ol{
-        list-style: decimal;
-        padding-left: 35px;
-        margin-bottom: 24px !important;
-
-        li{
-            padding-left: 0px;
-            position: relative;
-            margin-bottom: 3px;
-            margin-bottom: 10px !important;
-
-			&:last-child{
-				margin-bottom: 0;
-			}
-        }
-    }
-
-    > *:last-child{
-        margin-bottom: 0 !important;
-
-        img{
-            margin-bottom: 0
-        }
-    }
-
-    //default form styling
-    table {
-        margin-top: 20px;
-        margin-bottom: 40px;
-        text-transform: uppercase;
-        border-collapse: collapse;
-        width: 100%;
-      
-        th, td {
-          padding: 15px;
-          border: 1px solid #ccc;
-          font-size: 12px;
-          color: #333;
-        }
-      
-        th {
-          background-color: #666;
-          color: #fff;
-          text-align: left;
-        }
-      
-        tr:nth-child(2n) {
-          background-color: #f9f9f9;
-        }
-    }
+  > *:last-child {
+    margin-bottom: 0 !important;
 
     img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        border-radius: 18px;
+      margin-bottom: 0;
+    }
+  }
+
+  //default form styling
+  table {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    border-collapse: collapse;
+    width: 100%;
+
+    th,
+    td {
+      padding: 15px;
+      border: 1px solid #ccc;
+      font-size: 12px;
+      color: #333;
     }
 
-    .wp-block-image {
-        @apply my-40 md:my-52;
+    th {
+      background-color: #666;
+      color: #fff;
+      text-align: left;
     }
+
+    tr:nth-child(2n) {
+      background-color: #f9f9f9;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+  }
+
+  .wp-block-image {
+    @apply my-40 md:my-52;
+  }
 }
 
 * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-    font-family: 'circular-std';
-    src: url('../assets/CircularStd-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+  font-family: "circular-std";
+  src: url("../assets/CircularStd-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'circular-std';
-    src: url('../assets/CircularStd-Book.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "circular-std";
+  src: url("../assets/CircularStd-Book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'archivo-expanded';
-    src: url('../assets/Archivo_Expanded-Medium.ttf') format('truetype');
+  font-family: "archivo-expanded";
+  src: url("../assets/Archivo_Expanded-Medium.ttf") format("truetype");
 }
 
-a[href^="https://"]{
-    word-break: break-word;
+a[href^="https://"]
+{
+  word-break: break-word;
 }
