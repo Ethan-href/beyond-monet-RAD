@@ -5,6 +5,11 @@
   background: none;
   border-radius: 50%;
   border: 2px solid #fff;
+
+  @media only screen and (max-width: 767px) {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 /* Style the active bullet */

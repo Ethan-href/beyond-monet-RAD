@@ -391,14 +391,26 @@ video {
   display: table;
 }.hidden{
   display: none;
+}.aspect-\[16\/7\]{
+  aspect-ratio: 16/7;
 }.h-auto{
   height: auto;
+}.h-\[400px\]{
+  height: 400px;
+}.h-\[300px\]{
+  height: 300px;
 }.max-h-\[100vh\]{
   max-height: 100vh;
 }.min-h-\[50vh\]{
   min-height: 50vh;
 }.min-h-\[80px\]{
   min-height: 80px;
+}.min-h-\[400px\]{
+  min-height: 400px;
+}.min-h-\[300px\]{
+  min-height: 300px;
+}.min-h-\[200px\]{
+  min-height: 200px;
 }.w-160{
   width: 160px;
 }.w-full{
@@ -482,12 +494,12 @@ video {
   padding-top: 70px;
 }.pt-79{
   padding-top: 79px;
+}.pb-40{
+  padding-bottom: 40px;
 }.text-\[40px\]{
   font-size: 40px;
 }.font-bold{
   font-weight: 700;
-}.font-medium{
-  font-weight: 500;
 }.font-normal{
   font-weight: 400;
 }.leading-\[20px\]{
@@ -554,10 +566,15 @@ video {
     margin-top: 52px;
     margin-bottom: 52px;
   }
-}*{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@font-face{font-family:"circular-std";src:url("../assets/CircularStd-Bold.woff2") format("woff2");font-weight:700;font-style:normal}@font-face{font-family:"circular-std";src:url("../assets/CircularStd-Book.woff2") format("woff2");font-weight:400;font-style:normal}@font-face{font-family:"archivo-expanded";src:url("../assets/Archivo_Expanded-Medium.ttf") format("truetype")}a[href^="https://"]{word-break:break-word}.accordions .single-accordion .accordion-heading svg{transition:all .5s ease}.accordions .single-accordion.active .accordion-heading svg{transform:rotate(180deg)}.accordions h2,.accordions h3{font-weight:700}.heading{display:flex;align-items:center;justify-content:space-between;padding:20px;max-width:100%;cursor:pointer}.heading h3{margin:0;flex:1 1 auto}.heading .arrow{display:block;background-color:#323232;width:20px;height:10px;clip-path:polygon(0 100%, 50% 0, 100% 100%);transition:ease-in-out .4s;margin-left:24px;flex-shrink:0}.single-accordion.active .arrow{rotate:180deg}.basic-example-accordion .site-container .accordions__single--content *:last-child{margin-bottom:0}.swiper-pagination-bullet{width:17px;height:17px;background:none;border-radius:50%;border:2px solid #fff}.swiper-pagination-bullet-active{background:#fff !important;opacity:1;border:2px solid #fff}.hover\:underline:hover{
+}*{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@font-face{font-family:"circular-std";src:url("../assets/CircularStd-Bold.woff2") format("woff2");font-weight:700;font-style:normal}@font-face{font-family:"circular-std";src:url("../assets/CircularStd-Book.woff2") format("woff2");font-weight:400;font-style:normal}@font-face{font-family:"archivo-expanded";src:url("../assets/Archivo_Expanded-Medium.ttf") format("truetype")}a[href^="https://"]{word-break:break-word}.accordions .single-accordion .accordion-heading svg{transition:all .5s ease}.accordions .single-accordion.active .accordion-heading svg{transform:rotate(180deg)}.accordions h2,.accordions h3{font-weight:700}.heading{display:flex;align-items:center;justify-content:space-between;padding:20px;max-width:100%;cursor:pointer}.heading h3{margin:0;flex:1 1 auto}.heading .arrow{display:block;background-color:#323232;width:20px;height:10px;clip-path:polygon(0 100%, 50% 0, 100% 100%);transition:ease-in-out .4s;margin-left:24px;flex-shrink:0}.single-accordion.active .arrow{rotate:180deg}.basic-example-accordion .site-container .accordions__single--content *:last-child{margin-bottom:0}.swiper-pagination-bullet{width:17px;height:17px;background:none;border-radius:50%;border:2px solid #fff}@media only screen and (max-width: 767px){.swiper-pagination-bullet{width:10px;height:10px}}.swiper-pagination-bullet-active{background:#fff !important;opacity:1;border:2px solid #fff}.hover\:underline:hover{
   text-decoration-line: underline;
+}@media (min-width: 640px){.sm\:aspect-square{
+    aspect-ratio: 1 / 1;
+  }
 }@media (min-width: 768px){.md\:mb-0{
     margin-bottom: 0px;
+  }.md\:aspect-\[16\/7\]{
+    aspect-ratio: 16/7;
   }.md\:w-\[200px\]{
     width: 200px;
   }.md\:flex-row{
@@ -565,6 +582,10 @@ video {
   }.md\:py-16{
     padding-top: 16px;
     padding-bottom: 16px;
+  }.md\:pb-85{
+    padding-bottom: 85px;
+  }.md\:pb-106{
+    padding-bottom: 106px;
   }.md\:leading-\[35px\]{
     line-height: 35px;
   }.md\:leading-\[42px\]{
